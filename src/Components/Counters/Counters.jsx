@@ -18,16 +18,16 @@ const Counters = (props) => {
     <main>
       <section>
         <button
-          onClick={addCounter}
-          className={props.count.length === 3 ? "hidden" : ""}
-        >
-          Add counter
-        </button>
-        <button
           onClick={removeCounter}
           className={props.count.length === 1 ? "hidden" : ""}
         >
           Remove counter
+        </button>{" "}
+        <button
+          onClick={addCounter}
+          className={props.count.length === 3 ? "hidden" : ""}
+        >
+          Add counter
         </button>
       </section>
       <section>
